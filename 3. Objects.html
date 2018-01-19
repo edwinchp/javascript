@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript - Objects</title>
+</head>
+<body>
+
+	<h1>Objects</h1><br><br>
+
+	<h3>Extrayendo de los objetos</h3>
+	<script>
+		var persona = {
+			nombre: 'Edwin Chi',
+			edad: 22,
+			esHombre: true,
+			personalidad: ['sereno', 'paciete', 'introvertido'],
+			carrera: {profesor: 'inglés', programador: 'independiente'} //un objeto dentro de un objeto
+		}
+
+		document.write(persona.personalidad[2]);		//outputs introvertido
+		document.write("<br />")
+		document.write(persona['carrera'].profesor); 	//outputs inglés
+
+
+	</script><hr>
+
+
+
+	<h3>Añadiendo a los objetos</h3>
+	<script>
+		var myDog = {							//se crea un objeto llamado myDog
+			nombre: 'Jessy',					//contiene nombre y color
+			color: 'blanco',
+		}
+
+		myDog.edad= 8;							//se añade la edad al objeto myDog
+		document.write(myDog.edad);
+		document.write("<br />")
+		myDog['estado'] = 'dormido';			//se añade el estado
+		document.write(myDog.estado);
+	</script><hr>
+</body>
+</html>

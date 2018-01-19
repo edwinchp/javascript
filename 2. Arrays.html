@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript - Arrays</title>
+</head>
+<body>
+
+	<h1>Arrays</h1><br>
+	<h3>Explicando su funcionamiento</h3>
+	<script>
+		var a = ['cat', 'dog', 'banana'];
+
+		a[4]= 'panda';
+		document.write(a[4]);	//outputs panda
+		document.write(a[3]);	//outputs undefined
+	</script><hr>
+	
+
+	<br><br>
+	<h3>Añadiendo al Array</h3>
+	<script>
+		var b = ['auto', 'moto'];
+		b.push('avion');		//agrega avión al FINAL del array
+		b.unshift('tren');		//agrega tren al PRINCIPIO del array
+		document.write(b);		
+	</script><hr>
+
+
+	<br><br>
+	<h3>Removiendo del Array</h3>
+	<script>
+		var b = ['auto', 'moto'];
+		b.push('avion');		//agrega avión al FINAL del array
+		b.unshift('tren');		//agrega tren al PRINCIPIO del array
+
+		var ultimo = b.pop();	//outputs avion
+		document.write(ultimo);	
+
+		var primero = b.shift();
+		document.write(primero);	//outputs tren
+
+	</script><hr>
+
+</body>
+</html>
