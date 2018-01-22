@@ -40,5 +40,26 @@
 		myDog['estado'] = 'dormido';			//se añade el estado
 		document.write(myDog.estado);
 	</script><hr>
+
+
+
+	<h3>Comparando objetos</h3>
+	<script>
+		var myDog = {							//se crea un objeto llamado myDog
+			nombre: 'Jessy',					//contiene nombre y color
+			color: 'blanco',
+		}
+
+		var myCat = {
+			nombre:'Jessy',
+			color: 'blanco'
+		}
+
+		if(myDog == myCat){
+			document.write('True');
+		}else{
+			document.write('False');			//devolverá falso porque no son el mismo objeto
+		}
+	</script><hr>
 </body>
 </html>

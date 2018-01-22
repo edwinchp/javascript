@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript - Prompt</title>
+</head>
+<body>
+	<h1>Ventanas</h1><br><br>
+
+	<h3>Mandando ventanas</h3>
+	<script>
+		/*var user = prompt('Inserte un número');
+		for(var i=1; i<6;i++){
+			user *= i;
+		}
+		document.write(user);*/
+	</script><hr>
+
+	<h3>Con una multiplicación</h3>
+	<script>
+		var num1 = prompt('Primer número a multiplicar');
+		var num2 = prompt('Segundo número a multiplicar');
+
+		if(isNaN(num1) || isNaN(num2)){
+			alert('Verifica que sean números');
+		}else{
+			var resultado = num1*num2;
+			document.write(resultado);
+		}
+	</script>
+</body>
+</html>
